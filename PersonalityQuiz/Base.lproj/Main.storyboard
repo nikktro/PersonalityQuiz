@@ -183,6 +183,36 @@
                                     </button>
                                 </subviews>
                             </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="Rc4-1L-JX1">
+                                <rect key="frame" x="16" y="228" width="288" height="112.5"/>
+                                <subviews>
+                                    <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="O2m-Mt-jWS">
+                                        <rect key="frame" x="-2" y="0.0" width="292" height="31"/>
+                                    </slider>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="112" translatesAutoresizingMaskIntoConstraints="NO" id="3gc-rm-hzt">
+                                        <rect key="frame" x="0.0" y="46" width="288" height="20.5"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iO6-Cc-izq">
+                                                <rect key="frame" x="0.0" y="0.0" width="88" height="20.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zC3-ba-rnP">
+                                                <rect key="frame" x="200" y="0.0" width="88" height="20.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gsC-Ia-D9X">
+                                        <rect key="frame" x="0.0" y="82.5" width="288" height="30"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="Ответить"/>
+                                    </button>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Y10-gz-k6A"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -192,14 +222,27 @@
                                 <variation key="heightClass=compact-widthClass=regular" constant="16"/>
                             </constraint>
                             <constraint firstItem="ggj-3D-Po0" firstAttribute="leading" secondItem="Y10-gz-k6A" secondAttribute="leading" constant="16" id="4m8-Bu-GNA"/>
+                            <constraint firstItem="Rc4-1L-JX1" firstAttribute="centerY" secondItem="ciX-gQ-ycO" secondAttribute="centerY" id="8jr-ac-PDF">
+                                <variation key="heightClass=compact-widthClass=compact" constant="16"/>
+                                <variation key="heightClass=compact-widthClass=regular" constant="16"/>
+                            </constraint>
                             <constraint firstItem="Y10-gz-k6A" firstAttribute="trailing" secondItem="OWt-LY-pmV" secondAttribute="trailing" constant="16" id="Bk1-1r-Erj"/>
+                            <constraint firstItem="Y10-gz-k6A" firstAttribute="trailing" secondItem="Rc4-1L-JX1" secondAttribute="trailing" constant="16" id="HHM-0V-LX0"/>
                             <constraint firstItem="OWt-LY-pmV" firstAttribute="centerY" secondItem="ciX-gQ-ycO" secondAttribute="centerY" id="JT0-xg-m3E">
                                 <variation key="heightClass=compact-widthClass=compact" constant="16"/>
                                 <variation key="heightClass=compact-widthClass=regular" constant="16"/>
                             </constraint>
                             <constraint firstItem="Y10-gz-k6A" firstAttribute="trailing" secondItem="ggj-3D-Po0" secondAttribute="trailing" constant="16" id="Yg6-1z-XCM"/>
+                            <constraint firstItem="Rc4-1L-JX1" firstAttribute="leading" secondItem="Y10-gz-k6A" secondAttribute="leading" constant="16" id="jES-we-G8i"/>
                             <constraint firstItem="OWt-LY-pmV" firstAttribute="leading" secondItem="Y10-gz-k6A" secondAttribute="leading" constant="16" id="m6z-eC-DH7"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="OWt-LY-pmV"/>
+                                <exclude reference="ggj-3D-Po0"/>
+                                <exclude reference="Rc4-1L-JX1"/>
+                            </mask>
+                        </variation>
                     </view>
                     <navigationItem key="navigationItem" title="Вопрос №" id="20o-S6-ZHG">
                         <barButtonItem key="backBarButtonItem" title=" " id="bNA-m2-6DW"/>
