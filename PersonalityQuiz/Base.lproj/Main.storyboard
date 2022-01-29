@@ -91,10 +91,52 @@
                     <view key="view" contentMode="scaleToFill" id="ciX-gQ-ycO">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="OWt-LY-pmV">
+                                <rect key="frame" x="16" y="200" width="288" height="168"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GAM-N7-jew">
+                                        <rect key="frame" x="121" y="0.0" width="46" height="30"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="Button"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f0v-ZA-0LX">
+                                        <rect key="frame" x="121" y="46" width="46" height="30"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="Button"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hjg-PP-8C3">
+                                        <rect key="frame" x="121" y="92" width="46" height="30"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="Button"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qsc-SV-Peb">
+                                        <rect key="frame" x="121" y="138" width="46" height="30"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="Button"/>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="Y10-gz-k6A"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Y10-gz-k6A" firstAttribute="trailing" secondItem="OWt-LY-pmV" secondAttribute="trailing" constant="16" id="Bk1-1r-Erj"/>
+                            <constraint firstItem="OWt-LY-pmV" firstAttribute="centerY" secondItem="ciX-gQ-ycO" secondAttribute="centerY" id="JT0-xg-m3E">
+                                <variation key="heightClass=compact-widthClass=compact" constant="16"/>
+                                <variation key="heightClass=compact-widthClass=regular" constant="16"/>
+                            </constraint>
+                            <constraint firstItem="OWt-LY-pmV" firstAttribute="leading" secondItem="Y10-gz-k6A" secondAttribute="leading" constant="16" id="m6z-eC-DH7"/>
+                        </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Вопрос №" id="20o-S6-ZHG"/>
+                    <navigationItem key="navigationItem" title="Вопрос №" id="20o-S6-ZHG">
+                        <barButtonItem key="backBarButtonItem" title=" " id="bNA-m2-6DW"/>
+                        <barButtonItem key="rightBarButtonItem" title="Item" id="GOR-mg-yzf">
+                            <connections>
+                                <segue destination="grn-ny-YiD" kind="show" id="8xa-e6-TGy"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <segue destination="grn-ny-YiD" kind="show" identifier="showResult" id="k4D-5l-Ay0"/>
                     </connections>
@@ -137,11 +179,13 @@
                             <constraint firstItem="nkA-KO-SdF" firstAttribute="centerY" secondItem="UAb-3H-VqN" secondAttribute="centerY" id="zCT-mL-3fV"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Результат" id="HhW-jn-fc1"/>
+                    <navigationItem key="navigationItem" title="Результат" id="HhW-jn-fc1">
+                        <barButtonItem key="rightBarButtonItem" systemItem="done" id="pOn-7f-gEL"/>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PRy-Ct-aA6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2623" y="138"/>
+            <point key="canvasLocation" x="2696" y="137"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="VH1-dL-FtL">
@@ -162,6 +206,9 @@
             <point key="canvasLocation" x="967.5" y="137.32394366197184"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="8xa-e6-TGy"/>
+    </inferredMetricsTieBreakers>
     <resources>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
