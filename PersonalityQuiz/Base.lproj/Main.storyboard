@@ -213,6 +213,15 @@
                                     </button>
                                 </subviews>
                             </stackView>
+                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="P1Z-he-Esx">
+                                <rect key="frame" x="0.0" y="91" width="320" height="4"/>
+                            </progressView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XBP-jY-AVI">
+                                <rect key="frame" x="16" y="103" width="288" height="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Y10-gz-k6A"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -222,6 +231,7 @@
                                 <variation key="heightClass=compact-widthClass=regular" constant="16"/>
                             </constraint>
                             <constraint firstItem="ggj-3D-Po0" firstAttribute="leading" secondItem="Y10-gz-k6A" secondAttribute="leading" constant="16" id="4m8-Bu-GNA"/>
+                            <constraint firstItem="Y10-gz-k6A" firstAttribute="trailing" secondItem="P1Z-he-Esx" secondAttribute="trailing" id="7N1-Pu-tpm"/>
                             <constraint firstItem="Rc4-1L-JX1" firstAttribute="centerY" secondItem="ciX-gQ-ycO" secondAttribute="centerY" id="8jr-ac-PDF">
                                 <variation key="heightClass=compact-widthClass=compact" constant="16"/>
                                 <variation key="heightClass=compact-widthClass=regular" constant="16"/>
@@ -232,17 +242,15 @@
                                 <variation key="heightClass=compact-widthClass=compact" constant="16"/>
                                 <variation key="heightClass=compact-widthClass=regular" constant="16"/>
                             </constraint>
+                            <constraint firstItem="P1Z-he-Esx" firstAttribute="top" secondItem="Y10-gz-k6A" secondAttribute="top" id="KdX-Do-M7Q"/>
+                            <constraint firstItem="XBP-jY-AVI" firstAttribute="top" secondItem="P1Z-he-Esx" secondAttribute="bottom" constant="8" symbolic="YES" id="NV8-UL-ZEu"/>
                             <constraint firstItem="Y10-gz-k6A" firstAttribute="trailing" secondItem="ggj-3D-Po0" secondAttribute="trailing" constant="16" id="Yg6-1z-XCM"/>
+                            <constraint firstItem="P1Z-he-Esx" firstAttribute="leading" secondItem="Y10-gz-k6A" secondAttribute="leading" id="f82-V7-oAw"/>
+                            <constraint firstItem="Y10-gz-k6A" firstAttribute="trailing" secondItem="XBP-jY-AVI" secondAttribute="trailing" constant="16" id="gra-ox-Klo"/>
+                            <constraint firstItem="XBP-jY-AVI" firstAttribute="leading" secondItem="Y10-gz-k6A" secondAttribute="leading" constant="16" id="hEx-Iy-Z5E"/>
                             <constraint firstItem="Rc4-1L-JX1" firstAttribute="leading" secondItem="Y10-gz-k6A" secondAttribute="leading" constant="16" id="jES-we-G8i"/>
                             <constraint firstItem="OWt-LY-pmV" firstAttribute="leading" secondItem="Y10-gz-k6A" secondAttribute="leading" constant="16" id="m6z-eC-DH7"/>
                         </constraints>
-                        <variation key="default">
-                            <mask key="subviews">
-                                <exclude reference="OWt-LY-pmV"/>
-                                <exclude reference="ggj-3D-Po0"/>
-                                <exclude reference="Rc4-1L-JX1"/>
-                            </mask>
-                        </variation>
                     </view>
                     <navigationItem key="navigationItem" title="Вопрос №" id="20o-S6-ZHG">
                         <barButtonItem key="backBarButtonItem" title=" " id="bNA-m2-6DW"/>
