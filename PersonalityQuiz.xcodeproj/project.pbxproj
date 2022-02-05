@@ -14,6 +14,8 @@
 		B1BF135327A36438000973A1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B1BF135127A36438000973A1 /* Main.storyboard */; };
 		B1BF135527A3643B000973A1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B1BF135427A3643B000973A1 /* Assets.xcassets */; };
 		B1BF135827A3643B000973A1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B1BF135627A3643B000973A1 /* LaunchScreen.storyboard */; };
+		B1F55BCF27AE6A42008DC734 /* QuestionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1F55BCE27AE6A42008DC734 /* QuestionsViewController.swift */; };
+		B1F55BD127AE6A54008DC734 /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1F55BD027AE6A54008DC734 /* ResultViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,8 @@
 		B1BF135427A3643B000973A1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B1BF135727A3643B000973A1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B1BF135927A3643B000973A1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B1F55BCE27AE6A42008DC734 /* QuestionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionsViewController.swift; sourceTree = "<group>"; };
+		B1F55BD027AE6A54008DC734 /* ResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +47,8 @@
 			isa = PBXGroup;
 			children = (
 				B1BF134F27A36438000973A1 /* IntroducingViewController.swift */,
+				B1F55BCE27AE6A42008DC734 /* QuestionsViewController.swift */,
+				B1F55BD027AE6A54008DC734 /* ResultViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -182,9 +188,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				B1BF135027A36438000973A1 /* IntroducingViewController.swift in Sources */,
+				B1F55BCF27AE6A42008DC734 /* QuestionsViewController.swift in Sources */,
 				B10B44F727A60747006EFF4B /* Question.swift in Sources */,
 				B1BF134C27A36438000973A1 /* AppDelegate.swift in Sources */,
 				B1BF134E27A36438000973A1 /* SceneDelegate.swift in Sources */,
+				B1F55BD127AE6A54008DC734 /* ResultViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
