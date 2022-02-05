@@ -27,4 +27,14 @@ class QuestionsViewController: UIViewController {
     // MARK: Private Properties
     private let questions = Question.getQuestions()
     
+    // MARK: IBActions
+    @IBAction func singleAnswerButtonPressed(_ sender: UIButton) {
+    }
+    
+    @IBAction func multipleAnswerButtonPressed() {
+    }
+    
+    @IBAction func rangedAnswerButtonPressed() {
+    }
+    
 }
