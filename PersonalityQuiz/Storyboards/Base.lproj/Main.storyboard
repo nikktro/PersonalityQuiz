@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_0" orientation="portrait" appearance="light"/>
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -100,23 +101,32 @@
                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                         <state key="normal" title="Button"/>
                                         <connections>
-                                            <action selector="singleButtonAnswerPressed:" destination="ssi-Xc-GcR" eventType="touchUpInside" id="fP3-39-41P"/>
+                                            <action selector="singleAnswerButtonPressed:" destination="ssi-Xc-GcR" eventType="touchUpInside" id="8oG-ZE-JZc"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f0v-ZA-0LX">
                                         <rect key="frame" x="121" y="46" width="46" height="30"/>
                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                         <state key="normal" title="Button"/>
+                                        <connections>
+                                            <action selector="singleAnswerButtonPressed:" destination="ssi-Xc-GcR" eventType="touchUpInside" id="cR5-2t-q2j"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hjg-PP-8C3">
                                         <rect key="frame" x="121" y="92" width="46" height="30"/>
                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                         <state key="normal" title="Button"/>
+                                        <connections>
+                                            <action selector="singleAnswerButtonPressed:" destination="ssi-Xc-GcR" eventType="touchUpInside" id="qd4-aI-BsF"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qsc-SV-Peb">
                                         <rect key="frame" x="121" y="138" width="46" height="30"/>
                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                         <state key="normal" title="Button"/>
+                                        <connections>
+                                            <action selector="singleAnswerButtonPressed:" destination="ssi-Xc-GcR" eventType="touchUpInside" id="inb-y6-SMB"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -184,8 +194,7 @@
                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                         <state key="normal" title="Ответить"/>
                                         <connections>
-                                            <action selector="multipleAnswerButtonPressed" destination="ssi-Xc-GcR" eventType="touchUpInside" id="KQU-3G-4Tb"/>
-                                            <action selector="multipleAnswerButtonPressed:" destination="ssi-Xc-GcR" eventType="touchUpInside" id="z47-Qv-ORf"/>
+                                            <action selector="multipleAnswerButtonPressed" destination="ssi-Xc-GcR" eventType="touchUpInside" id="Hvz-jc-jVq"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -218,7 +227,7 @@
                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                         <state key="normal" title="Ответить"/>
                                         <connections>
-                                            <action selector="rangedAnswerButtonPressed" destination="ssi-Xc-GcR" eventType="touchUpInside" id="i8M-6g-ebh"/>
+                                            <action selector="rangedAnswerButtonPressed" destination="ssi-Xc-GcR" eventType="touchUpInside" id="JXF-qg-F3x"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -365,7 +374,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="8xa-e6-TGy"/>
+        <segue reference="k4D-5l-Ay0"/>
     </inferredMetricsTieBreakers>
     <resources>
         <systemColor name="systemBackgroundColor">
