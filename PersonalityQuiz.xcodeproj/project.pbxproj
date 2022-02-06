@@ -344,6 +344,7 @@
 				DEVELOPMENT_TEAM = T2HBBQ5KF9;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = PersonalityQuiz/App/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Maybe dog?";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -373,6 +374,7 @@
 				DEVELOPMENT_TEAM = T2HBBQ5KF9;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = PersonalityQuiz/App/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Maybe dog?";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
