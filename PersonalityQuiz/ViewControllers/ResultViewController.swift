@@ -14,34 +14,36 @@ class ResultViewController: UIViewController {
     @IBOutlet var animalDescriptionLabel: UILabel!
     
     // MARK: Properties
-    var chosenAnswers: [Answer]!
+    var answers: [Answer]!
     
     // MARK: Override Methods
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         navigationItem.hidesBackButton = true
-        
-
+        updateResult()
     }
     
     // MARK: Private Methods
-    private func findMostFrequentAnimal() -> Animal? {
+    private func updateResult() {
+        var frequencyOfAnimals: [Animal: Int] = [:]
+        let animals = answers.map { $0.animal }
         
-        // TODO: add logic
-        var results: [Animal: Int] = [:]
-        for answer in chosenAnswers {
-            
+        for animal in animals {
+            if let animalTypeCount = frequencyOfAnimals[animal] {
+                frequencyOfAnimals.updateValue(animalTypeCount + 1, forKey: animal)
+            } else {
+                frequencyOfAnimals[animal] = 1
+            }
         }
-        
 
-        return results.max(by: { $0.value < $1.value })?.key
+        guard let mostFrequentAnimal = frequencyOfAnimals
+                .max(by: { $0.value < $1.value })?.key else { return }
+        
+        UpdateUI(with: mostFrequentAnimal)
     }
     
-    private func UpdateUI() {
-        if let resultAnimal = findMostFrequentAnimal() {
-            animalLabel.text = "Вы - \(resultAnimal.rawValue)"
-            animalDescriptionLabel.text = resultAnimal.definition
-        }
+    private func UpdateUI(with animal: Animal) {
+        animalLabel.text = "Вы - \(animal.rawValue)"
+        animalDescriptionLabel.text = animal.definition
     }
 }

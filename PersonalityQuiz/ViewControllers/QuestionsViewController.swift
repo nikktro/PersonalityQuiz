@@ -48,7 +48,7 @@ class QuestionsViewController: UIViewController {
         guard let resultVC = segue.destination as? ResultViewController else {
             return
         }
-        resultVC.chosenAnswers = chosenAnswers
+        resultVC.answers = chosenAnswers
     }
     
     // MARK: IBActions
